@@ -1,0 +1,5 @@
+<div class="container">
+    <app-exibir-turmas [turmas]='turmas' [editando]="editando" (onEditar)="editor($event)"
+                   (onExcluir)="deletar($event)">           </app-exibir-turmas>
+    <app-editor-de-turma [editando]="editando" (onAtualizar)="limpar()"> </app-editor-de-turma>
+</div>
